@@ -740,7 +740,7 @@
 
 -(void)rotateGameView: (NSNotification *) notif
 {
-    UIDeviceOrientation ori = [[notif object] orientation];
+    UIDeviceOrientation ori = [[UIDevice currentDevice] orientation];
     
     CGAffineTransform theTransform;
     
